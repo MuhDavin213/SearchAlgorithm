@@ -74,6 +74,17 @@ namespace SearchAlgorithm
 
                 Console.Write("\ncontinue search (y/n):");
                 ch = char.Parse(Console.ReadLine());
+            } while ((ch == 'y') || (ch == 'Y'));
+        }
+        public void LinearSearch()
+        {
+            char ch;
+            //search for number of comparison
+            int ctr;
+            do
+            {
+                //acc the number to be reached
+                Console.Write("\nenter the element ypu want to search:");
             }
         }
     }
