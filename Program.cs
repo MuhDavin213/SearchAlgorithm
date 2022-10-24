@@ -97,6 +97,20 @@ namespace SearchAlgorithm
                         break;
                     }
                 }
+                if (i == n)
+                    Console.WriteLine("\n" + item.ToString() + "not found in the array");
+                Console.WriteLine("\nNumber of comparison: " + ctr);
+                Console.Write("\ncontinous search (y/n):");
+                ch = char.Parse(Console.ReadLine());
+            } while ((ch == 'y') || ((ch == 'Y'));
+        }
+        static void main(string[]args)
+        {
+            Program mylist = new Program();
+            int pilihanmenu;
+            do
+            {
+                Console.Writeline("menu option");
             }
         }
     }
