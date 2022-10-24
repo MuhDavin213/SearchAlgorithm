@@ -84,7 +84,19 @@ namespace SearchAlgorithm
             do
             {
                 //acc the number to be reached
-                Console.Write("\nenter the element ypu want to search:");
+                Console.Write("\nenter the element ypu want to search: ");
+                int item = Convert.ToInt32(Console.ReadLine());
+
+                ctr = 0;
+                for (i = 0; i < n; i++)
+                {
+                    ctr++;
+                    if (arr[i] == item)
+                    {
+                        Console.WriteLine("\n" + item.ToString() + "found st position" + (i + 1).ToString());
+                        break;
+                    }
+                }
             }
         }
     }
