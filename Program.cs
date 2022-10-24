@@ -39,7 +39,7 @@ namespace SearchAlgorithm
             }
 
         }
-        static void Main(string[] args)
+        public void BinarySearch()
         {
             char ch;
             do
@@ -104,13 +104,44 @@ namespace SearchAlgorithm
                 ch = char.Parse(Console.ReadLine());
             } while ((ch == 'y') || ((ch == 'Y'));
         }
-        static void main(string[]args)
+        static void Main(string[]args)
         {
             Program mylist = new Program();
             int pilihanmenu;
             do
             {
-                Console.Writeline("menu option");
+                Console.WriteLine("menu option");
+                Console.WriteLine("================");
+                Console.WriteLine("1.Linear Search");
+                Console.WriteLine("2.Binary Search");
+                Console.WriteLine("Exit");
+                Console.Write("Enter your choice(1,2,3) : ");
+                pilihanmenu = Convert.ToInt32(Console.ReadLine());
+
+                switch (pilihanmenu)
+                {
+                    case 1:
+                        Console.WriteLine("");
+                        Console.WriteLine("***************");
+                        Console.WriteLine("Linear Search");
+                        Console.WriteLine("***************");
+                        mylist.input();
+                        mylist.LinearSearch();
+                    case 2:
+                        Console.WriteLine("");
+                        Console.WriteLine("***************");
+                        Console.WriteLine("Linear Search");
+                        Console.WriteLine("***************");
+                        mylist.input();
+                        mylist.LinearSearch();
+                    case 1:
+                        Console.WriteLine("");
+                        Console.WriteLine("***************");
+                        Console.WriteLine("Linear Search");
+                        Console.WriteLine("***************");
+                        mylist.input();
+                        mylist.LinearSearch();
+                }
             }
         }
     }
