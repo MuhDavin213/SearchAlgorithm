@@ -102,7 +102,7 @@ namespace SearchAlgorithm
                 Console.WriteLine("\nNumber of comparison: " + ctr);
                 Console.Write("\ncontinous search (y/n):");
                 ch = char.Parse(Console.ReadLine());
-            } while ((ch == 'y') || ((ch == 'Y'));
+            } while ((ch == 'y') || (ch == 'Y'));
         }
         static void Main(string[]args)
         {
@@ -127,22 +127,27 @@ namespace SearchAlgorithm
                         Console.WriteLine("***************");
                         mylist.input();
                         mylist.LinearSearch();
+                        break;
                     case 2:
                         Console.WriteLine("");
                         Console.WriteLine("***************");
-                        Console.WriteLine("Linear Search");
+                        Console.WriteLine("Binary Search");
                         Console.WriteLine("***************");
                         mylist.input();
-                        mylist.LinearSearch();
-                    case 1:
-                        Console.WriteLine("");
-                        Console.WriteLine("***************");
-                        Console.WriteLine("Linear Search");
-                        Console.WriteLine("***************");
-                        mylist.input();
-                        mylist.LinearSearch();
+                        mylist.BinarySearch();
+                        break;
+                    case 3:
+
+                        Console.WriteLine("Exit.");
+                        break;
+                        default:
+                        Console.WriteLine("error");
+                        break;
                 }
-            }
+                //to exit from the console
+                Console.WriteLine("\n\npress Return to exit.");
+                Console.ReadLine();
+            } while (pilihanmenu != 3);
         }
     }
 }
