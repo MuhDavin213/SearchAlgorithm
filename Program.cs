@@ -53,6 +53,7 @@ namespace SearchAlgorithm
                 int upperbound = 0;
 
                 //obtain the index of the middle element
+                int mid = (lowerbound + upperbound) / 2;
             }
         }
     }
