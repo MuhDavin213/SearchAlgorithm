@@ -18,7 +18,11 @@ namespace SearchAlgorithm
         {
             while (true)
             {
-
+                Console.Write("Enter the number of elements i the array: ");
+                string s = Console.ReadLine();
+                n = Int32.Parse(s);
+                if ((n > 0) && (n  <= 20))
+                    break;
             }
         }
         static void Main(string[] args)
