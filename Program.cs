@@ -52,7 +52,7 @@ namespace SearchAlgorithm
                 int lowerbound = 0;
                 int upperbound = 0;
 
-                //obtain
+                //obtain the index of the middle element
             }
         }
     }
